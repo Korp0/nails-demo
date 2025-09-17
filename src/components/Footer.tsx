@@ -9,7 +9,12 @@ export default function Footer() {
         <div className="mt-2 sm:mt-0">
           Web by{" "}
           <span className="font-medium">
-            <a href="https://www.instagram.com/gabo_urban/">Gabriel Urban</a>
+            <a
+              href="https://www.instagram.com/gabo_urban/"
+              className="text-pink-600 font-medium hover:text-pink-800 transition"
+            >
+              Gabriel Urban
+            </a>
           </span>
         </div>
       </div>

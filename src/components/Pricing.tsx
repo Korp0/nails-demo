@@ -11,12 +11,15 @@ const items: Item[] = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-gray-50">
+    <section id="pricing">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold">Služby & Cenník</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {items.map((it) => (
-            <div key={it.name} className="rounded-2xl border p-4">
+            <div
+              key={it.name}
+              className="rounded-2xl border p-4 transition hover:border-pink-400 hover:shadow-md"
+            >
               <div className="font-medium">{it.name}</div>
               <div className="text-gray-500">{it.price}</div>
               {it.note && (
